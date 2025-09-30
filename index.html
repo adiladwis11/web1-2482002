@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<!--
+    Nama    : Adila Dwi Septiani
+    Nim     : 2482002
+-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width,
+    initial-scale=1" />
+    <title>Websiteku</title>
+    <style>
+        :root{
+            --maxw: 1100px;
+            --gap: 16px;
+        }
+        *{
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, Arial, sans-serif;
+            line-height: 1.6; 
+            color:  #222;
+
+        }
+
+        .page{
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "main aside"
+                "footer footer";
+            grid-template-columns: 4fr 1fr; /*80% 20%*/
+            gap: var(--gap);
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        header{
+            grid-area: header;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 10 px;
+        }
+
+        .logo{
+            width: 72px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav{
+            margin-left: auto;
+        }
+
+        .nav{
+            display: flex;
+            gap: 12px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        main{
+            grid-area: main;
+
+        }
+        aside {
+            grid-area: aside;
+        }
+        .card{
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: var(--gap);
+            background: #fafafa;
+        }
+        footer{
+            grid-area: footer;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+            color: #555;
+            font-size: .9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- menggunakan Header untuk Navigantions-->
+         <header>
+            <div class="Logo" aria-label="logo">LOGO</div>
+            <nav aria-label="Main Navigations">
+                <ul class="nav">
+                    <li>HOME</li>
+                    <li><a href="about.html">About</a></li>
+                    <li>My Holiday</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+         </header>
+         <main id="Home">
+            <h1>Websiteku</h1>
+            <p>
+        Liburan kali ini sangat berbeda <b>dan berkesan </b> bagi aku. Biasanya saat liburan, aku
+        menghabiskan waktu dengan bersantai di rumah atau bermain bersama teman-teman.
+        <i>Namun, pada liburan kali ini, aku ikut terlibat dalam kegiatan 17 Agustusan di lingkungan tempat tinggalku,</i>.  dan yang lebih seru lagi,
+        aku menjadi salah satu panitia acara tersebut! Menjadi panitia ternyata sangat menyenangkan meskipun cukup melelahkan. Aku dan teman-teman 
+        panitia lainnya mulai mempersiapkan acara sejak awal bulan Agustus. Kami mengadakan 
+        rapat, menyusun jadwal lomba, menghias lingkungan dengan bendera merah putih, dan 
+        menyiapkan perlengkapan untuk berbagai lomba seperti balap karung, makan kerupuk, tarik
+        tambang, dan lomba-lomba seru lainnya.
+            </p>
+         </main>
+         <aside aria-label="Side Menu">
+            <div calss="Card">
+                <h3>Menu Tambahan</h3>
+                <ul>
+                    <li>Menu 1</li>
+                    <li>Menu 2</li>
+                    <li>Menu 3</li>
+                </ul>
+
+            </div>
+            <div calss="Card">
+                <h3>Pesan Sponsor</h3>
+                <p>Disini bisa kami kasih beberapa item
+                    misalnya link iklan/gambar iklan
+                </p>
+
+            </div>
+         </aside>
+         <footer>
+            2025 &copy; Adila Dwi Septiani
+         </footer>
+    </div>
+</body>
+
+</html>
 
