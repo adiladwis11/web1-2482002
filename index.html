@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!--
     Nama    : Adila Dwi Septiani
-    Nim     : 2482002
+    NIM     : 2482002
 -->
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width,
+    <meta nama="viewport" content="width=devicewidth,
     initial-scale=1" />
     <title>Websiteku</title>
     <style>
@@ -13,16 +13,16 @@
             --maxw: 1100px;
             --gap: 16px;
         }
+
         *{
             box-sizing: border-box
-        }
+         }
 
-        body {
+        body{
             margin: 0;
-            font-family: system-ui, Arial, sans-serif;
-            line-height: 1.6; 
-            color:  #222;
-
+            font-family:system-ui,Arial, sans-serif;
+            line-height: 1.6;
+            color:rgb(41, 38, 38);
         }
 
         .page{
@@ -31,7 +31,7 @@
                 "header header"
                 "main aside"
                 "footer footer";
-            grid-template-columns: 4fr 1fr; /*80% 20%*/
+            grid-template-columns: 4fr 1fr; /* 80% 20% */
             gap: var(--gap);
             max-width: var(--maxw);
             margin: 0 auto;
@@ -43,7 +43,7 @@
             display: flex;
             align-items: center;
             border-bottom: 1px solid #eeeeee;
-            padding-bottom: 10 px;
+            padding-bottom: 10px;
         }
 
         .logo{
@@ -53,10 +53,11 @@
             align-items: center;
             justify-content: center;
         }
-        .nav{
-            margin-left: auto;
-        }
 
+        nav{
+            margin-left: auto;
+
+        }
         .nav{
             display: flex;
             gap: 12px;
@@ -66,9 +67,8 @@
         }
         main{
             grid-area: main;
-
         }
-        aside {
+        aside{
             grid-area: aside;
         }
         .card{
@@ -76,67 +76,64 @@
             border-radius: 12px;
             padding: 12px;
             margin-bottom: var(--gap);
-            background: #fafafa;
+            background: rgba(59, 132, 155, 0.667);
         }
-        footer{
-            grid-area: footer;
+        foorter{
+            grid-area: foorter;
             border-top: 1px solid #eee;
             padding-top: 10px;
             color: #555;
-            font-size: .9rem;
+            font-size: 9rem;
         }
+
     </style>
+    
 </head>
 <body>
     <div class="page">
-        <!-- menggunakan Header untuk Navigantions-->
-         <header>
+        <!--menggunakan Header untuk navigation-->
+        <header>
             <div class="Logo" aria-label="logo">LOGO</div>
-            <nav aria-label="Main Navigations">
+            <img src="https://s.yimg.com/zb/imgv1/0bafa093-6717-3f6c-b973-e291ee0fcda7/t_500x300" alt="LOGO UNAI">
+            <nav aria-label="Main Navigation">
                 <ul class="nav">
-                    <li>HOME</li>
+                    <li>Home</li>
                     <li><a href="about.html">About</a></li>
                     <li>My Holiday</li>
                     <li>Contact</li>
                 </ul>
             </nav>
-         </header>
-         <main id="Home">
+        </header>
+        <main id="Home">
             <h1>Websiteku</h1>
             <p>
-        Liburan kali ini sangat berbeda <b>dan berkesan </b> bagi aku. Biasanya saat liburan, aku
-        menghabiskan waktu dengan bersantai di rumah atau bermain bersama teman-teman.
-        <i>Namun, pada liburan kali ini, aku ikut terlibat dalam kegiatan 17 Agustusan di lingkungan tempat tinggalku,</i>.  dan yang lebih seru lagi,
-        aku menjadi salah satu panitia acara tersebut! Menjadi panitia ternyata sangat menyenangkan meskipun cukup melelahkan. Aku dan teman-teman 
-        panitia lainnya mulai mempersiapkan acara sejak awal bulan Agustus. Kami mengadakan 
-        rapat, menyusun jadwal lomba, menghias lingkungan dengan bendera merah putih, dan 
-        menyiapkan perlengkapan untuk berbagai lomba seperti balap karung, makan kerupuk, tarik
-        tambang, dan lomba-lomba seru lainnya.
+                Selamat datang di Website sederhanaku
+                Saya anak ke bungsu dari 2 bersaudara. Saya tinggal di Kota Bandar Lampung kabupaten pesawaran 
+                saya lahir di lampung saya lahir pada tanggal 11 september baru ulang tahun kemarin heheh.
+                Saya memiliki hobi scrool TikTok dan Instagram.
+
+    </p>
             </p>
-         </main>
-         <aside aria-label="Side Menu">
-            <div calss="Card">
+        </main>
+        <aside aria-label="Side Menu">
+            <div class="card">
                 <h3>Menu Tambahan</h3>
                 <ul>
                     <li>Menu 1</li>
                     <li>Menu 2</li>
                     <li>Menu 3</li>
                 </ul>
-
             </div>
-            <div calss="Card">
-                <h3>Pesan Sponsor</h3>
-                <p>Disini bisa kami kasih beberapa item
-                    misalnya link iklan/gambar iklan
-                </p>
-
+            <div class="card">
+                <h3>Pesan Sponsor</h3> 
+                <p>bisa di tambahkan link/gambar iklan
+                </p> 
             </div>
-         </aside>
-         <footer>
+        </aside>
+        <footer>
             2025 &copy; Adila Dwi Septiani
-         </footer>
+        </footer>
     </div>
 </body>
 
 </html>
-
